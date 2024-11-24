@@ -3,20 +3,17 @@
 public class Anagram {
 	public static void main(String args[]) {
 		// Tests the isAnagram function.
-		// System.out.println(isAnagram("sileNt","listen"));  // true
-		// System.out.println(isAnagram("William Shakespeare","H am a weakish speller")); // true
-		// System.out.println(isAnagram("Madam Curie","Radium came")); // true
-		// System.out.println(isAnagram("Tox Marvolo Riddle","I am lord Voldemort")); // true
-
-		//System.out.println(isAnagram("silewt","listen"));
+		System.out.println(isAnagram("silent","listen"));  // true
+		System.out.println(isAnagram("William Shakespeare","I am a weakish speller")); // true
+		System.out.println(isAnagram("Madam Curie","Radium came")); // true
+		System.out.println(isAnagram("Tom Marvolo Riddle","I am Lord Voldemort")); // true
 
 		// Tests the preProcess function.
-		// System.out.println(preProcess("What? No way!!!"));
-		// System.out.println(preProcess("BOOKS are GrEat FOR youR Heart- hoNEY!!!"));
-	//	//System.out.println(charCounter("Tom Marvolo Riddle", 'x'));
+		System.out.println(preProcess("What? No way!!!"));
+		
 		// Tests the randomAnagram function.
-		// System.out.println("silent and " + randomAnagram("silent") + " are anagrams.");
-
+		System.out.println("silent and " + randomAnagram("silent") + " are anagrams.");
+		
 		// Performs a stress test of randomAnagram 
 		String str = "1234567";
 		Boolean pass = true;
@@ -28,12 +25,6 @@ public class Anagram {
 			if (!pass) break;
 		}
 		System.out.println(pass ? "test passed" : "test Failed");
-
-		//String s = args[0];
-		//System.out.println("dental");
-		// System.out.println(deleteChar(s, (int) (Math.random() * s.length())));
-		//System.out.println((int) (Math.random() * s.length()));
-
 	}  
 
 	// Returns true if the two given strings are anagrams, false otherwise.
